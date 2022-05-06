@@ -42,7 +42,7 @@ fun SplashScreen(navController: NavController) {
         ))
 
         delay(2000L)
-        navController.navigate(WeatherAppScreen.HomeScreen.name)
+        navController.navigate(WeatherAppScreen.HomeScreen.name+"/Uyo")
     })
     Surface(
         modifier = Modifier
