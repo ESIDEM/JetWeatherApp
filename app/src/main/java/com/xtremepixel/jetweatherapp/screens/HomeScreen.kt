@@ -49,7 +49,8 @@ fun HomeScreenScaffold(weather: Weather, navController: NavController) {
             elevation = 1.dp,
             onActionClicked = {
                 navController.navigate(route = WeatherAppScreen.SearchScreen.name)
-            }
+            },
+            navController = navController
         )
     }) {
         MainContent(data = weather)

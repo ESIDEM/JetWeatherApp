@@ -31,7 +31,8 @@ fun SearchScreen(navController: NavController) {
             icon = Icons.Default.ArrowBack,
             elevation = 1.dp,
             isHomeScreen = false,
-            title = "Search..."
+            title = "Search...",
+            navController = navController
         ) {
             navController.popBackStack()
         }
