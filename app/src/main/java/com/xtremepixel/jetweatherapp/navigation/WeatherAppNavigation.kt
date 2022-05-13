@@ -7,10 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.xtremepixel.jetweatherapp.screens.HomeScreen
-import com.xtremepixel.jetweatherapp.screens.HomeScreenViewModel
-import com.xtremepixel.jetweatherapp.screens.SearchScreen
-import com.xtremepixel.jetweatherapp.screens.SplashScreen
+import com.xtremepixel.jetweatherapp.screens.*
 
 @Composable
 fun WeatherAppNavigation() {
@@ -33,8 +30,19 @@ fun WeatherAppNavigation() {
         }
 
         composable(WeatherAppScreen.SearchScreen.name){
-            val homeScreenVM = hiltViewModel<HomeScreenViewModel>()
             SearchScreen(navController = navController)
+        }
+
+        composable(WeatherAppScreen.SettingScreen.name){
+            SettingsScreen(navController = navController)
+        }
+
+        composable(WeatherAppScreen.AboutScreen.name){
+            AboutScreen(navController = navController)
+        }
+
+        composable(WeatherAppScreen.FavoriteScreen.name){
+            FavouriteScreen(navController = navController)
         }
 
     }
