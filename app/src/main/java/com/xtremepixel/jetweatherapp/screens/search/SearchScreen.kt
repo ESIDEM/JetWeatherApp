@@ -1,4 +1,4 @@
-package com.xtremepixel.jetweatherapp.screens
+package com.xtremepixel.jetweatherapp.screens.search
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

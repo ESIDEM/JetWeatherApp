@@ -1,4 +1,4 @@
-package com.xtremepixel.jetweatherapp.screens
+package com.xtremepixel.jetweatherapp.screens.splash
 
 import android.view.animation.OvershootInterpolator
 import androidx.compose.foundation.BorderStroke

@@ -2,6 +2,7 @@ package com.xtremepixel.jetweatherapp.data
 
 import androidx.room.*
 import com.xtremepixel.jetweatherapp.model.Favourite
+import com.xtremepixel.jetweatherapp.model.Unit
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -18,4 +19,10 @@ interface WeatherDao {
 
     @Delete
     suspend fun deleteFavourite(favourite: Favourite)
+
+    @Query("SELECT * from unit_table")
+    fun getUnit(): Flow<List<Unit>>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertUnit(unit: Unit)
 }

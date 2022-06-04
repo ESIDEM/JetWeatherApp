@@ -9,6 +9,9 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.xtremepixel.jetweatherapp.screens.*
 import com.xtremepixel.jetweatherapp.screens.favourite.FavouriteScreen
+import com.xtremepixel.jetweatherapp.screens.search.SearchScreen
+import com.xtremepixel.jetweatherapp.screens.settings.SettingsScreen
+import com.xtremepixel.jetweatherapp.screens.splash.SplashScreen
 
 @Composable
 fun WeatherAppNavigation() {
